@@ -18,7 +18,7 @@ table = db.table('events')
 
 r = session.get('https://tuerantuer.de/cafe/wochenplan/')
 
-yummyImages = r.html.find(".content-area", first=True).find('img[class*=wp-image-]')
+yummyImages = r.html.find(".site-content", first=True).find('img[class*=wp-image-]')
 
 # print(sc.api_call("conversations.list", types="public_channel,private_channel"))
 
